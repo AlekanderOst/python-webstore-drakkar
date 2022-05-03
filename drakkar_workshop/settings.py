@@ -147,7 +147,7 @@ STATICFILES_DIRS = (
 MEDIA_URL = '/pictures/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "pictures")
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 LOGIN_REDIRECT_URL = '/'
 # django_heroku.settings(locals())
 LOGIN_URL = 'user'

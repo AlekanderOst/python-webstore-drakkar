@@ -1,0 +1,23 @@
+{% extends 'goods/base.html' %}
+
+{% block title %}
+    Вы вышли из учётной записи
+{% endblock %}
+
+{% block content %}
+    <div class="background" style="height: 445px">
+        <div class="items" style="width: 75%; display: flex; justify-content: center;">
+            <div class="item">
+                <div style="justify-content: center; display: flex; align-items: center;">
+                    <p style="font-size: 30px; padding-top: 20px">You are logged out</p>
+                </div>
+                <div style=" display: flex; justify-content: center;">
+                    <a href="{% url 'user' %}">
+                    <button class="button_style_footer">Come back</button>
+                    </a>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{% static 'goods/main.css' %}">
+</head>
+<body>
+    <div class="out">
+        <div class="header">
+            <p class="text">WORKSHOP OF LEATHER THINGS</p>
+            <a href="#" class="icon">
+                <img src="/pictures/icon.png" alt="@">
+            </a>
+            <p class="text">ORIGINAL THINGS OUT OF TIME</p>
+        </div>
+    </div>
+    <div class="plase_button">
+        <div class="buttons">
+            <button href="#" class="button">All goods</button>
+            <button class="button">Backpacks</button>
+            <button class="button">Bags</button>
+            <button class="button">Wallets</button>
+            <button class="button">Accessories</button>
+            <button class="button">About</button>
+            <button class="button">Contact</button>
+        </div>
+    </div>
+
+    {% block main_section %}
+    {% endblock %}
+</body>
+</html>

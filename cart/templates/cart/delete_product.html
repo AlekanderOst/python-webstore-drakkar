@@ -1,0 +1,27 @@
+{% extends 'goods/base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+    <div class="background" style="height: 445px">
+        <div class="items" style="width: 75%; display: flex; justify-content: center;">
+            <div class="item">
+                <div>
+                    <p style="font-size: 20px;margin: 20px;">Do you want to remove a product from the cart?</p>
+                </div>
+                <div style=" display: flex; justify-content: center;">
+                    <form action="" method="post">
+                    {% csrf_token %}
+                        <p><button class="button_style_footer" type="submit">Delete</button></p>
+                    </form>
+                    <a href="{% url 'cart' user.username %}">
+                    <button class="button_style_footer">Back</button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'goods/base.html' %}
+{% block content %}
+    <div class="background">
+        <div class="items">
+            <div class="item" style="width: 60%;">
+                <div>
+                    <span style="margin-left: 10px">{{ object.title }}</span>
+                {% if good.img %}
+                    <img class="item" style="" src="{{ object.img.url }}" alt="#{{ object.title }}">
+                {% else %}
+                    <img src="/pictures/default.jpg" alt="@{{ object.title }}">
+                {% endif %}
+                </div>
+            </div>
+            <div class="item" style="padding: 10px 20px 20px 20px">
+                <p class="text-one">Description product:</p>
+                <p>{{ object.descriptions }}</p>
+                <p>Dimensions: {{ object.dimensions }} cm</p>
+                <p>Material: {{ object.material }}</p>
+                <p>Cost: {{ object.cost }} €</p>
+                {% if not user.is_authenticated %}
+                    <div>
+                        <a style="color: white" href="{% url 'reg' %}">
+                            <button style="font-size: 27px; margin-top: 5px; margin-right: 15px;" class="button_style_footer" >Sign up</button>
+                        </a>
+                        <span style="font-size: 25px;">or</span>
+                        <a  href="{% url 'user' %}">
+                            <button style="font-size: 27px;" class="button_style_footer">Log in</button>
+                        </a>
+                    </div><br>
+                    <span style="font-size: 25px; margin: 35px;">End add product to cart</span>
+                {% else %}
+                    <form action="" enctype="multipart/form-data" method="post">
+                        {% csrf_token %}
+                        {{ form.img }}
+                        {{ form.cost }}
+                        <span>Color: {{ form.choose_color }}</span><br><br>
+                        <button style="font-size: 27px; margin-left: 75px; margin-top: 25px;" class="button_style_footer" type="submit">Add to cart</button>
+                    </form>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 0px;
+
+}
+body {
+    background: #edecec;
+}
+.out {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    height: 100%;
+    background: #edecec;
+}
+.button_style {
+    border: 0px;
+    border-radius: 12px;
+    padding: 1px 15px;
+    margin-left: 15px;
+}
+.login_space {
+    background: #9b9898;
+}
+.login {
+    display: flex;
+    justify-content: end;
+    padding: 8px;
+    padding-right: 25px;
+
+}
+.header {
+    display: flex;
+    }
+.text {
+    margin: auto;
+    display: flex;
+    width: 310px;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    font-weight: 500;
+}
+.space {
+    margin-left: 13px;
+    margin-right: 5px;
+}
+.icon {
+    width: 190px;
+    margin-right: 2%;
+}
+.icon_cart {
+    width: 20px;
+}
+.text-one {
+    //margin-top: 35px;
+}
+.plase_button {
+    background: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-right: 33px;
+}
+.button {
+    border: 0px;
+}
+.btn {
+    text-decoration: none;
+    color: black;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.my-block {
+   display: block;
+   text-decoration: none;
+    color: black;
+}
+.my-block:hover {
+   border:1px solid red;
+   border: 0px;
+}
+.background {
+     background: #edecec;
+     padding: 0px 0px 20px 0px;
+}
+.items {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 80%;
+    margin-left: 12%;
+}
+.items .item {
+    background: white;
+    width: 30%;
+    margin: 20px 10px 0px 10px;
+    padding:10px 7px 7px 7px;
+    border-radius: 15px;
+}
+.items .item img {
+    width: 100%;
+    margin: 0px;
+
+}
+.main-block {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 80%;
+    margin-left: 12%;
+}
+.footer {
+    width: 100%;
+    //height: 200px;
+    //margin-top: 10px;
+}
+.out_cart {
+    display: flex;
+    //justify-content: center;
+}
+.button_style_footer {
+    background: white;
+    border-radius: 12px;
+    padding: 1px 15px;
+    margin-left: 15px;
+    border-color: #c1c1c1;
+    border-style: solid;
+}
+.items .item_cart {
+    background: white;
+    //width: 30%;
+    margin: 20px 10px 0px 10px;
+    padding:10px 7px 7px 7px;
+    border-radius: 15px;
+}
+.cart_style {
+    display: flex;
+    margin: 20px 10px 0px 10px;
+    padding:10px 10px 10px 10px;
+    border-radius: 15px;
+    background: white;
+    align-items: center;
+}
+.image_cart {
+    border-radius: 10px;
+}
+.cart_text {
+    margin-left: 50px;
+    margin-right:px;
+}
+.form input {
+    display: block;
+    width: 98%;
+    margin-top: 5px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 1%;
+}

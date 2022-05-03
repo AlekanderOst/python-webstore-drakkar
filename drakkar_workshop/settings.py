@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
+import dj-database-url
 import django_heroku
 import os
 from pathlib import Path
@@ -146,8 +147,14 @@ STATICFILES_DIRS = (
 MEDIA_URL = '/pictures/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "pictures")
 
-STATIC_ROOT = os.path.join(BASE_DIR, '/static/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 LOGIN_REDIRECT_URL = '/'
 django_heroku.settings(locals())
+LOGIN_URL = 'user'
+
+
+
+db_from_env = dj-database-url.config()
+DATABASE['default'].update(db_from_env)
 # my----
 

@@ -5,7 +5,7 @@
         {% for good in goods %}
             {% if good.kind == 'Accessories' %}
                 <div class="item">
-                    <span style="margin-left: 10px">{{ good.title }}</span>
+                    <span style="margin-left: 10px;">{{ good.title }}</span>
                     <a class="my-block" href="{{ good.get_absolute_url }}">
                         {% if good.img %}
                             <img class="item" src="{{ good.img.url }}" alt="#{{ good.title }}">
@@ -19,16 +19,19 @@
         </div>
     </div>
     <div class="background">
-        <div class="items">
-            <div class="item" style="width: 93%; display: flex;">
-                <img style="width: 50%; margin: 10px; border-radius: 10px;" class="icon" src="/pictures/8.jpg" alt="@">
-                <div style="padding: 50px 100px;">
-                    <span style="font-size: 21px">
+        <div class="ContentItems">
+            <div class="ContentItem" >
+                <img   class="" src="/pictures/8.jpg" alt="@">
+                <div  class="ContentText">
+                    <span  class="TextSize">
                         We invite you to visit our workshop.
                         Here, in a pleasant atmosphere, we can take your order over a cup of tea.
                         You can choose something from our range or order something new, especially for you.
                         Our designer will create a sketch according to your desires in terms of
-                        functionality, size and style.
+                        functionality, size and style. You have complete freedom in creating your product.
+                        Tell us what kind of things you want to put in the product
+                        and what type of product it will be.
+                        Our designer will offer you several options.
                     </span>
                 </div>
             </div>

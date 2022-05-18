@@ -7,15 +7,14 @@
 {% block content %}
     <div class="background">
         {% if cart %}
-        <div style="display: flex; justify-content: center;" class="items" >
-
+        <div  class="items CartExtraOut">
         {% for item in cart %}
-            <div style="width: 60%; margin-right: 80px" >
+            <div  class="CartExtra">
                 <div class="cart_style" >
                     <span>
-                        <img class="icon image_cart" src="{{ item.img.url }}" alt="#{{ object.title }}">
+                        <img id="CartIconPoduct" class="icon image_cart" src="{{ item.img.url }}" alt="#{{ object.title }}">
                     </span>
-                    <div style="width: 400px;">
+                    <div class="W-400">
                         <div class="cart_text">
                             <p>Product: {{ item.title }}</p>
                             <p>Cost: {{ item.cost }}</p>
@@ -31,34 +30,33 @@
             </div>
         {% endfor %}
         </div>
-        <div style="width: 73%;">
-            <div style="display: flex; justify-content: end;">
-                <button style="font-size: 27px;
-                 margin-left: 75px;
-                 margin-top: 25px;
-                 padding: 5px 60px;"
-                        class="button_style_footer">Pay</button>
+        <div class="W-73">
+            <div class="CartExtraEnd">
+                <button class="button_style_footer TextPay">Pay</button>
             </div>
         </div>
         {% else %}
-            <div style="display: flex; justify-content: center;" class="items" >
-                <div class="item" style="display: flex; justify-content: center;">
-                    <p style="font-size: 30px;">Your cart is empty</p>
+            <div class="items CartExtraOut" >
+                <div id="CartStyleEmpty" class="item CartExtraOut">
+                    <span class="TextEmpty">Your cart is empty</span>
                 </div>
             </div>
         {% endif %}
     </div>
     <div class="background">
-        <div class="items">
-            <div class="item" style="width: 93%; display: flex;">
-                <img style="width: 30%; margin: 10px; border-radius: 10px;" class="icon" src="/pictures/d4dd8eb8f780a703d6339188705011db.jpg" alt="@">
-                <div style="padding: 100px 200px;">
-                    <span style="font-size: 21px">
+        <div class="ContentItems">
+            <div class="ContentItem" >
+                <img   class="" src="/pictures/d4dd8eb8f780a703d6339188705011db.jpg" alt="@">
+                <div  class="ContentText">
+                    <span  class="TextSize">
                         We invite you to visit our workshop.
                         Here, in a pleasant atmosphere, we can take your order over a cup of tea.
                         You can choose something from our range or order something new, especially for you.
                         Our designer will create a sketch according to your desires in terms of
-                        functionality, size and style.
+                        functionality, size and style. You have complete freedom in creating your product.
+                        Tell us what kind of things you want to put in the product
+                        and what type of product it will be.
+                        Our designer will offer you several options.
                     </span>
                 </div>
             </div>

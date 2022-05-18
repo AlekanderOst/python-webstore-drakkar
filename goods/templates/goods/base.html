@@ -37,10 +37,11 @@
             </a>
             <p class="text">ORIGINAL THINGS OUT OF TIME</p>
         </div>
-
     </div>
-    <div class="plase_button">
-        <div class="button">
+
+    <div id="NoneMenu" class="plase_button">
+        <a id="MyMenu" class="menu btnMenu" href="#">&#9776</a>
+        <div class="button" id="MyButton">
             <a href="/all-goods" class="btn">All goods</a>
             <a href="/backpacks" class="btn">Backpacks</a>
             <a href="/bags" class="btn">Bags</a>
@@ -50,7 +51,7 @@
             <a href="/contact" class="btn">Contact</a>
             {% if user.is_authenticated %}
             <a href="{% url 'cart' user.username %}" class="icon_cart">
-                <img  style="margin: 0px 0px 6px 15px" class="icon_cart" src="/pictures/cart_png.png" alt="@">
+                <img  style="" class="icon_cart" src="/pictures/cart_png.png" alt="@">
             </a>
             {% endif %}
         </div>
@@ -84,5 +85,6 @@
             </svg>
         </div>
     </footer>
+    <script src="{% static 'goods/index-1.js' %}"></script>
 </body>
 </html>

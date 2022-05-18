@@ -5,10 +5,15 @@
     margin: 0px;
     padding: 0px;
     margin-top: 0px;
-
 }
 body {
     background: #edecec;
+}
+.test {
+    background: #9b9898;
+}
+.menu {
+    display: none;
 }
 .out {
     display: flex;
@@ -16,6 +21,11 @@ body {
     padding: 15px;
     height: 100%;
     background: #edecec;
+}
+.content-image {
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;"
 }
 .button_style {
     border: 0px;
@@ -31,7 +41,6 @@ body {
     justify-content: end;
     padding: 8px;
     padding-right: 25px;
-
 }
 .header {
     display: flex;
@@ -55,7 +64,9 @@ body {
 }
 .icon_cart {
     width: 20px;
+    margin: 0px 0px 6px 15px ;
 }
+
 .text-one {
     //margin-top: 35px;
 }
@@ -68,6 +79,7 @@ body {
 }
 .button {
     border: 0px;
+
 }
 .btn {
     text-decoration: none;
@@ -75,10 +87,15 @@ body {
     margin-left: 12px;
     margin-right: 12px;
 }
+.btnMenu {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
 .my-block {
    display: block;
    text-decoration: none;
-    color: black;
+   color: black;
 }
 .my-block:hover {
    border:1px solid red;
@@ -88,6 +105,11 @@ body {
      background: #edecec;
      padding: 0px 0px 20px 0px;
 }
+.ContentLoginSpace{
+    display: none;
+    height:20px;
+    background: #edecec;
+}
 .items {
     display: flex;
     justify-content: start;
@@ -96,6 +118,29 @@ body {
     width: 80%;
     margin-left: 12%;
 }
+.DetailsItems {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 80%;
+    margin-left: 12%;
+}
+.ContentItems {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 80%;
+    margin-left: 12%;
+}
+.DetailsItems .item {
+    background: white;
+    width: 30%;
+    margin: 20px 10px 0px 10px;
+    padding:10px 7px 7px 7px;
+    border-radius: 15px;
+}
 .items .item {
     background: white;
     width: 30%;
@@ -103,10 +148,23 @@ body {
     padding:10px 7px 7px 7px;
     border-radius: 15px;
 }
+.ContentItems .ContentItem {
+    display: flex;
+    background: white;
+    margin: 20px 10px 0px 10px;
+    padding:10px 7px 7px 7px;
+    border-radius: 15px;
+    width: 93%;
+}
+.ContentItems .ContentItem img {
+    width: 30%;
+    margin: 0px;
+    border-radius: 15px;
+    padding:7px 7px 7px 7px;
+}
 .items .item img {
     width: 100%;
     margin: 0px;
-
 }
 .main-block {
     display: flex;
@@ -140,6 +198,18 @@ body {
     padding:10px 7px 7px 7px;
     border-radius: 15px;
 }
+.CartExtraOut {
+    display: flex;
+    justify-content: center;
+}
+.CartExtraEnd {
+    display: flex;
+    justify-content: end;
+}
+.CartExtra {
+    width: 60%;
+    margin-right: 80px;
+}
 .cart_style {
     display: flex;
     margin: 20px 10px 0px 10px;
@@ -147,6 +217,22 @@ body {
     border-radius: 15px;
     background: white;
     align-items: center;
+}
+.W-400 {
+    width: 400px;
+}
+.W-73 {
+    width: 73%;
+}
+.TextPay {
+    font-size: 27px;
+    margin-left: 75px;
+    margin-top: 25px;
+    padding: 5px 60px;
+}
+.TextEmpty {
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 .image_cart {
     border-radius: 10px;
@@ -162,4 +248,188 @@ body {
     border: 1px solid silver;
     border-radius: 5px;
     padding: 1%;
+}
+.TextSize {
+    font-size: 19px;
+}
+.ContentText {
+    padding: 70px 100px;
+}
+.StyleExit {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+.TextExit {
+    font-size: 30px;
+    padding-top: 20px
+}
+a.btn:hover {
+    color: #ef3900;
+    border: 1px solid #ef3900;
+    border-radius: 15px;
+}
+a.btn:active {
+    background: #e53700d1;
+    color: white;
+    border-radius: 15px;
+}
+a.btn:focus {
+    box-shadow: none ;
+}
+.button_style:hover {
+    color: #ef3900;
+}
+.button_style:active {
+    background: #e53700d1;
+    color: white;
+    box-shadow: none;
+
+}
+.button_style:focus {
+    box-shadow: none ;
+}
+.button_style_footer:hover {
+    color: #ef3900;
+}
+.button_style_footer:active {
+    background: #e53700d1;
+    color: white;
+}
+.button_style_footer:focus {
+    box-shadow: none ;
+}
+
+@media screen and (max-width: 886px) {
+    .menu {
+        display: block;
+        margin-left: 35px;
+    }
+    .ContentLoginSpace{
+        display: block;
+        background: #edecec;
+    }
+    .iconCart {
+        width: 20px;
+        display: block;
+    }
+    .button {
+        display: none;
+    }
+    .text {
+        display: none;
+    }
+    .icon {
+    width: 150px;
+    margin-right: 2%;
+    }
+    .TextSize {
+        font-size: 15px
+    }
+    .ContentText {
+        padding: 10px 10px;
+    }
+    .ContentItems {
+        display: block !important;
+        width: 100%;
+        margin-left: 1.5%;
+    }
+    .ContentItems .ContentItem {
+        display: block;
+        margin: 0px;
+        width: 97%;
+    }
+    .ContentItems .ContentItem img {
+    width: 100%;
+    }
+    .button.responsive {
+        position: relative;
+        display: block;
+    }
+    .button.responsive .menu {
+        position: absolute;
+    }
+    .button.responsive a {
+        float: none;
+        text-align: center;
+        display: block;
+        margin-left: 40px;
+    }
+    .plase_button.responsive a#MyMenu {
+        display: none !important;
+    }
+    a.icon_cart {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .icon_cart {
+        margin-left: 48px;
+        margin-top: 6px;
+
+    }
+    a#MyMenu {
+        color: black;
+    }
+    .items {
+        margin: 0px;
+        width: 100%;
+    }
+    .items .item {
+        width: 46%;
+        margin: 10px 5px 0px 5px;
+        padding: 4px 7px 7px 7px;
+    }
+        .items #CartStyleEmpty.item {
+        width: 80%;
+        margin: 10px 5px 0px 5px;
+        padding: 4px 7px 7px 7px;
+    }
+        .items .itemDet {
+        width: 60%;
+        margin: 10px 5px 0px 5px;
+        padding: 4px 7px 7px 7px;
+    }
+    .items .item img {
+        padding: 0px 0px 0px 0px;
+        border-radius: 8px;
+    }
+    #detail.item {
+        width: 100% !important;
+    }
+    #description.item {
+        width: 100% !important;
+    }
+    .TextEmpty {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+    .cart_style {
+        display: block;
+    }
+    .cart_text {
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #CartIconPoduct.icon {
+        width: 250px;
+    }
+    .CartExtra {
+        width: 90%;
+        margin-right: 0px;
+    }
+    .StyleExit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+    .TextExit {
+    font-size: 25px;
+    }
+    #RegLog.item {
+        width: 80%;
+    }
+    a.btn:hover {
+        background: red !important;
+    }
 }

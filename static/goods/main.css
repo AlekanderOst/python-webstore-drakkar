@@ -270,7 +270,7 @@ a.btn:hover {
     border-radius: 15px;
 }
 a.btn:active {
-    background: #e53700d1;
+    background: #e537009e;
     color: white;
     border-radius: 15px;
 }
@@ -281,7 +281,7 @@ a.btn:focus {
     color: #ef3900;
 }
 .button_style:active {
-    background: #e53700d1;
+    background: #e537009e;
     color: white;
     box-shadow: none;
 
@@ -293,7 +293,7 @@ a.btn:focus {
     color: #ef3900;
 }
 .button_style_footer:active {
-    background: #e53700d1;
+    background: #e537009e;
     color: white;
 }
 .button_style_footer:focus {

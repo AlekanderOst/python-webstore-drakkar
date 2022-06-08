@@ -1,16 +1,10 @@
-from . import models
+
 from .models import Good
 from django.views.generic import ListView, DetailView, CreateView
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render
 from cart.forms import CartForm
-from django.contrib.auth.models import User
-from cart.models import Cart
+
 from django.urls import reverse
-from django.core.files.uploadedfile import SimpleUploadedFile
-from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
-
-
-# Create your views here.
 
 
 def new_home(request):
@@ -42,7 +36,7 @@ class All(ListView):
 
     def get_context_data(self, *, object_list=None, **kwargs):
         ctx = super(All, self).get_context_data(**kwargs)
-        ctx['title'] = 'Главная'
+        ctx['title'] = 'Main'
         return ctx
 
 

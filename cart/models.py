@@ -12,11 +12,11 @@ class Cart(models.Model):
         ('yelow', 'yelow'),
         ('blue', 'blue'),
     ]
-    title = models.CharField('Товар', max_length=100, default='')
-    cost = models.CharField('Стоимость', max_length=100, default='0')
-    choose_color = models.CharField('Цвет', max_length=20,choices=COLOR, default='black')
-    date = models.DateTimeField(verbose_name ='Дата заказа',default=timezone.now)
-    author = models.ForeignKey(User, verbose_name ='Клиент',on_delete=models.SET_NULL,null=True)
+    title = models.CharField('Product', max_length=100, default='')
+    cost = models.CharField('Cost', max_length=100, default='0')
+    choose_color = models.CharField('Color', max_length=20,choices=COLOR, default='black')
+    date = models.DateTimeField(verbose_name ='Date order',default=timezone.now)
+    author = models.ForeignKey(User, verbose_name ='Client',on_delete=models.SET_NULL,null=True)
     img = models.ImageField(default='default.jpg', upload_to='goods_images')
 
 
@@ -28,8 +28,8 @@ class Cart(models.Model):
         return self.title
 
     class Meta:
-        verbose_name = 'Заказ'
-        verbose_name_plural = 'Заказы'
+        verbose_name = 'Order'
+        verbose_name_plural = 'Orders'
 
     def get_absolute_url(self):
         return reverse('cart', kwargs={'username': self.author})

@@ -6,14 +6,14 @@ from django.utils import timezone
 
 class Good(models.Model):
     slug = models.SlugField()
-    kind = models.CharField('Тип', max_length=120, default='')
-    title = models.CharField('Название', max_length=120, default='')
-    material = models.CharField('Материал', max_length=120, default='')
-    dimensions = models.CharField('Габариты', max_length=120, default='')
-    descriptions = models.TextField('Описание', max_length=2000)
-    cost = models.CharField('Стоимость', max_length=120, default='0')
+    kind = models.CharField('Type', max_length=120, default='')
+    title = models.CharField('Name', max_length=120, default='')
+    material = models.CharField('Material', max_length=120, default='')
+    dimensions = models.CharField('Dimensions', max_length=120, default='')
+    descriptions = models.TextField('Description', max_length=2000)
+    cost = models.CharField('Cost', max_length=120, default='0')
     img = models.ImageField(default='default.jpg', upload_to='goods_images')
-    date = models.DateTimeField(verbose_name='Дата заказа', default=timezone.now)
+    date = models.DateTimeField(verbose_name='Date order', default=timezone.now)
 
     def __str__(self):
         return self.title
@@ -22,6 +22,6 @@ class Good(models.Model):
         return reverse('good-detail', kwargs={'slug': self.slug})
 
     class Meta:
-        verbose_name = 'Товар'
-        verbose_name_plural = 'Товары'
+        verbose_name = 'Product'
+        verbose_name_plural = 'Products'
 
